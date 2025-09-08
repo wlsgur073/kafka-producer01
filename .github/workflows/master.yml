@@ -28,5 +28,5 @@ jobs:
     - name: deploy with AWS codeDeploy
       run: aws deploy create-deployment
         --application-name datalake-depoly
-        --deployment-group-name kafka-deploy
+        --deployment-group-name kafka-depoly
         --s3-location bucket=datalake-actions-deploy-jhkim,bundleType=tgz,key=kafka-producer/kafka-producer.tar.gz
